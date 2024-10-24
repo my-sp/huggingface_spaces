@@ -15,6 +15,7 @@ pipeline = transformers.pipeline(
 
 # Streamlit user interface
 st.title("LLM Model Inference")
+st.write(f"**Using model:** {model_id}")
 input_text = st.text_input("Enter your prompt:")
 
 if st.button("Generate"):
